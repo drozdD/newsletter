@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form {
+            width: 400px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(79, 161, 216);
+        }
+
+        #buton {
+            text-align: right;
+        }
+
+        #links {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: rgb(116, 191, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <form action="/addUser" method="POST">
+            <label>nick: </label>
+            <input type="text" name="nick">
+            <br><br>
+            <label>email: </label>
+            <input type="email" name="email">
+            <br><br>
+            <div id="buton">
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </div>
+    <div id="links">
+        <a href="/removeUserBySelect">Remove User By Select </a><br>
+        <a href="/removeUserByRadio">Remove User By Radio </a><br>
+        <a href="/removeUserByCheckbox">Remove User By Checkbox </a>
+    </div>
+
+</body>
+
+</html>
