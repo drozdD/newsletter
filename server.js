@@ -2,7 +2,6 @@ var express = require("express")
 var app = express()
 const PORT = 3000;
 var path = require("path");
-const { json } = require("stream/consumers");
 app.use(express.urlencoded({ extended: true }))
 
 let users = [
@@ -26,7 +25,7 @@ app.post("/addUser", function (req, res) {
         nick: req.body.nick,
         email: req.body.email
     })
-    res.send("pikabu")
+    res.send(users)
 })
 
 app.get("/removeUserBySelect", function (req, res) {
